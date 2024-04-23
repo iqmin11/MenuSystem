@@ -1,0 +1,1 @@
+"C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe" "C:\DevelopHSM\UnrealServerPractice\PuzzlePlatforms\PuzzlePlatforms.uproject" 127.0.0.1:7777 -game -log

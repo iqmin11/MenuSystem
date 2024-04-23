@@ -1,0 +1,20 @@
+cmd 명령어:
+서버: <엔진위치> <프로젝트 위치> /Game/<level위치>?listen -server -log
+클라: <엔진위치> <프로젝트 위치> <ipconfig로 나오는 내 ip>:포트번호 -game
+- ?listen을 꼭 달아야함
+- IP는 127.0.0.1도 가능, 꼭 포트 번호 확인
+참고자료: 언리얼 Document "에디터에서 네트워크 플레이" => "네트워크 테스트 셋업하기 "
+
+//엔진
+"C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe" 
+
+//프로젝트
+"C:\DevelopHSM\UnrealServerPractice\PuzzlePlatforms\PuzzlePlatforms.uproject"
+
+"C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe" "C:\DevelopHSM\UnrealServerPractice\PuzzlePlatforms\PuzzlePlatforms.uproject" /Game/ThirdPerson/Maps/ThirdPersonMap -game -log
+
+//서버
+"C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe" "C:\DevelopHSM\UnrealServerPractice\PuzzlePlatforms\PuzzlePlatforms.uproject" /Game/ThirdPerson/Maps/ThirdPersonMap?listen -server -log
+
+//클라이언트
+"C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe" "C:\DevelopHSM\UnrealServerPractice\PuzzlePlatforms\PuzzlePlatforms.uproject" 127.0.0.1:7777 -game -log
