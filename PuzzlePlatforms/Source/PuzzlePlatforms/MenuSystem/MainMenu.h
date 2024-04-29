@@ -30,8 +30,36 @@ private:
 	UPROPERTY(meta = (BindWidget))
 	class UButton* JoinButton = nullptr;
 
+	UPROPERTY(meta = (BindWidget))
+	class UButton* CancelButton = nullptr;
+
+	UPROPERTY(meta = (BindWidget))
+	class UWidgetSwitcher* MenuSwitcher = nullptr;
+
+	UPROPERTY(meta = (BindWidget))
+	class UWidget* MainMenu = nullptr;
+
+	UPROPERTY(meta = (BindWidget))
+	class UWidget* JoinMenu = nullptr;
+
+	UPROPERTY(meta = (BindWidget))
+	class UButton* ConnectGameButton = nullptr;
+
+	UPROPERTY(meta = (BindWidget))
+	class UEditableText* IPAddressField = nullptr;
+
+
 	UFUNCTION()
 	void HostSever();
+
+	UFUNCTION()
+	void JoinSever();
+
+	UFUNCTION()
+	void OpenJoinMenu();
+
+	UFUNCTION()
+	void OpenMainMenu();
 
 	IMenuInterface* MenuInterface = nullptr;
 
